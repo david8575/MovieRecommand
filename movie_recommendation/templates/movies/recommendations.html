@@ -1,0 +1,10 @@
+<h1>Recommended Movies</h1>
+<ul>
+    {% for movie in recommended_movies %}
+        <li>
+            <strong>{{ movie.title }}</strong> - {{ movie.genre }}<br>
+            {{ movie.description }}<br>
+            Release Date: {{ movie.release_date }} | Rating: {{ movie.rating }}
+        </li>
+    {% endfor %}
+</ul>
